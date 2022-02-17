@@ -1,0 +1,17 @@
+
+@font-face {
+  font-family: "lemon-milk";
+  src: url("/typefaces/lemon-milk.otf")
+}
+.lemon-milk {
+  font-family: "lemon-milk";
+}
+  
+@font-face {
+  font-family: "melon-milk";
+  src: url("/typefaces/melon-milk.otf")
+}
+.melon-milk {
+  font-family: "melon-milk";
+}
+  
