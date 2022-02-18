@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => (
   <div className="dark:bg-black transition-colors">
@@ -14,7 +15,7 @@ const Layout = ({ children }) => (
       {children}
     </main>
 
-    <footer></footer>
+    <Footer />
   </div>
 );
 

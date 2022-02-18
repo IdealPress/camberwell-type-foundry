@@ -9,13 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          "Angie Sans Std",
-          "Neue Haas Unica W1G",
-          "Inter",
-          ...defaultTheme.fontFamily.sans,
-        ],
-        mono: ["Century Schoolbook Monospace", ...defaultTheme.fontFamily.mono],
+        sans: ["Neue Haas Unica W1G", "Inter", ...defaultTheme.fontFamily.sans],
+        serif: ["Angie Sans Std", ...defaultTheme.fontFamily.serif],
       },
       gridTemplateColumns: {
         // Simple 16 column grid
@@ -34,7 +29,7 @@ module.exports = {
             img: {
               maxWidth: "100vw",
               width: "100vw",
-              margin: "0rem 0rem 3rem -4.5rem",
+              margin: "3rem 0rem 3rem -1.5rem",
             },
           },
         },

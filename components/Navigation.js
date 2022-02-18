@@ -5,20 +5,20 @@ const Navigation = () => {
   const [darkMode, setDarkMode] = useDarkMode();
 
   return (
-    <div className="flex justify-between sticky top-5 z-10">
+    <div className="flex justify-between items-center sticky top-5 z-10 font-serif">
       <Link href="/">
-        <a className="uppercase tracking-widest bg-black dark:bg-white text-white dark:text-black p-5 rounded-xl">
+        <a className="dark:hover:bg-gray-600 hover:bg-gray-600 text-xs sm:text-base uppercase tracking-wider transition-colors bg-white dark:bg-black dark:text-white hover:text-white p-5">
           Camberwell College of Arts Type Foundry
         </a>
       </Link>
-      <div className="flex space-x-4">
-        <p className="uppercase tracking-wider bg-gray-100 p-5 rounded-2xl">
+      <div className="flex space-x-4 items-center">
+        <p className="hover:bg-gray-600 uppercase tracking-wider text-xs sm:text-base transition-colors dark:hover:bg-gray-600 dark:hover:text-white bg-white dark:bg-black dark:text-white hover:text-white p-5">
           About
         </p>
         {typeof window !== "undefined" && (
           <button
             onClick={setDarkMode}
-            className="uppercase tracking-wider transition-colors hover:bg-gray-600 p-5 rounded-2xl text-2xl leading-none"
+            className="uppercase tracking-wider transition-colors hover:bg-gray-600 p-5 text-lg sm:text-2xl leading-none rounded-full"
           >
             {darkMode ? "🌙" : "🌞"}
           </button>
