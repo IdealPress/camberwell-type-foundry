@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Gray Medium";
+    src: url("/gray-medium.otf")
+}
+.gray-medium {
+    font-family: "Gray Medium";
+}
+
+*   {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

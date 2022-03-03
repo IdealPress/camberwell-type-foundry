@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Neue Haas Unica W1G", "Inter", ...defaultTheme.fontFamily.sans],
-        serif: ["Angie Sans Std", ...defaultTheme.fontFamily.serif],
+        serif: ["Gray Medium", "Angie Sans Std", ...defaultTheme.fontFamily.serif],
       },
       gridTemplateColumns: {
         // Simple 16 column grid
