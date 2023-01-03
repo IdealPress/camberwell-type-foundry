@@ -30,19 +30,16 @@ const PreviewInput = ({
 }) => {
   const router = useRouter();
   const [values, setValues] = useState([defaultSize]);
-  const [textAreaContent, setTextAreaContent] = useState(
-    pangrams[Math.floor(Math.random() * pangrams.length)]
-  );
+  const [textAreaContent, setTextAreaContent] = useState(entry.data.title);
   return (
     <div className="space-y-2">
       <div
-        className={`focus:outline-none ${entry.data.class}`}
-        style={{ color: entry.data.color || "#000" }}
+        className={`focus:outline-none ${entry.data.class} text-black dark:text-white`}
       >
         <textarea
           value={textAreaContent}
           onChange={(e) => setTextAreaContent(e.target.value)}
-          className="whitespace-nowrap overflow-y-hidden focus:outline-none focus:bg-gray-50 p-5 w-full dark:bg-black dark:focus:bg-slate-900 transition-colors dark:focus:text-white"
+          className="text-center whitespace-nowrap overflow-y-hidden focus:outline-none focus:bg-gray-50 p-5 w-full dark:bg-black dark:focus:bg-slate-900 transition-colors dark:focus:text-white scrollbar-thin scrollbar-thumb-black dark:scrollbar-thumb-white scrollbar-track-slate-100 dark:scrollbar-track-slate-900"
           style={{
             fontSize: `${values[0]}px`,
             height: `${defaultSize * 1.6}px`,

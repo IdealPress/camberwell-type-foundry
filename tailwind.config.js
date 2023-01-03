@@ -28,8 +28,8 @@ module.exports = {
             },
             img: {
               maxWidth: "100vw",
-              width: "100vw",
-              margin: "3rem 0rem 3rem -1.5rem",
+              width: "calc(100vw - 4rem)",
+              margin: "3rem 0rem 3rem 0",
             },
           },
         },
@@ -38,10 +38,18 @@ module.exports = {
             p: {
               color: "white",
             },
+            ul: {
+              color: "white",
+            },
+            li: {
+              color: "white"
+            }
           },
         },
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"), require('tailwind-scrollbar')
+  ],
 };

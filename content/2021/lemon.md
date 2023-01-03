@@ -2,8 +2,6 @@
 title: Lemon Sans
 class: "lemon-milk"
 author: "Jill Bloggs"
-color: "#f56042"
-project: ""
 year: 1
 slug: "lemon"
 ---

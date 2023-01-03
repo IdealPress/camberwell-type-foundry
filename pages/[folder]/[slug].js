@@ -6,7 +6,6 @@ import ReactMarkdown from "react-markdown";
 import PreviewInput from "../../components/PreviewInput";
 import CharacterSet from "../../components/CharacterSet";
 import Link from "next/link";
-import useScrollPosition from "../../utils/useScrollPosition";
 
 export default function Page({ entry }) {
   return (
@@ -16,14 +15,10 @@ export default function Page({ entry }) {
           entry={entry}
           preset={"pangram"}
           displayOptions={false}
-          defaultSize={360}
+          defaultSize={200}
         />
       </div>
-      <p
-        className={`${
-          useScrollPosition() > 400 ? "px-5" : "text-5xl"
-        } uppercase transition-all tracking-wider py-4 bg-white dark:bg-black dark:text-white text-gray-800 inline-block sticky top-24 font-serif`}
-      >
+      <p className="text-5xl uppercase transition-all tracking-wider py-4 bg-white dark:bg-black dark:text-white text-gray-800 inline-block font-serif">
         {entry.data.title}
       </p>
       <p className="text-gray-500">{entry.data.author}</p>
@@ -36,8 +31,8 @@ export default function Page({ entry }) {
           <CharacterSet entry={entry} />
         </div>
         <Link href={`/typefaces/${entry.data.class}.otf`}>
-          <a className="inline-block text-center p-4 bg-gray-100 dark:bg-gray-900 hover:bg-gray-600 hover:text-white transition-colors dark:text-white uppercase tracking-wider">
-            ↓ Download {entry.data.title}
+          <a className="inline-block text-center p-4 bg-gray-100 dark:bg-gray-900 hover:bg-gray-600 hover:text-white transition-colors dark:text-white tracking-wider">
+            ↓ Download 
           </a>
         </Link>
       </div>

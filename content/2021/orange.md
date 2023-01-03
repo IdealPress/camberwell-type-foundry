@@ -1,9 +1,7 @@
 ---
 title: Orange
-class: "lemon-milk"
+class: ""
 author: "Jill Bloggs"
-color: "orange"
-project: ""
 year: 1
 slug: "orange"
 ---

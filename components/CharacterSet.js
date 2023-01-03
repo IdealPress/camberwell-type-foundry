@@ -1,5 +1,5 @@
 const alphabet =
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!?.,";
 
 const CharacterSet = ({ entry }) => (
   <div className="space-y-4">
@@ -8,7 +8,7 @@ const CharacterSet = ({ entry }) => (
       {alphabet.split("").map((character, index) => (
         <div
           key={index}
-          className={`bg-gray-50 dark:bg-slate-800 dark:text-white flex content-center justify-center p-4 text-xl lg:text-3xl ${entry.data.class}`}
+          className={`bg-gray-50 dark:bg-slate-900 dark:text-white flex content-center justify-center p-4 text-xl lg:text-3xl ${entry.data.class}`}
         >
           {character}
         </div>

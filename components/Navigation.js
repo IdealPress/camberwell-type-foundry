@@ -5,24 +5,28 @@ const Navigation = () => {
   const [darkMode, setDarkMode] = useDarkMode();
 
   return (
-    <div className="flex justify-between items-center sticky top-5 z-10 font-serif">
-      <Link href="/">
-        <a className="dark:hover:bg-gray-600 hover:bg-gray-600 text-xs sm:text-base uppercase tracking-wider transition-colors bg-white dark:bg-black dark:text-white hover:text-white p-5">
-          Camberwell College of Arts Type Foundry
-        </a>
-      </Link>
-      <div className="flex space-x-4 items-center">
-        <p className="hover:bg-gray-600 uppercase tracking-wider text-xs sm:text-base transition-colors dark:hover:bg-gray-600 dark:hover:text-white bg-white dark:bg-black dark:text-white hover:text-white p-5">
-          About
-        </p>
-        {typeof window !== "undefined" && (
-          <button
-            onClick={setDarkMode}
-            className="uppercase tracking-wider transition-colors hover:bg-gray-600 p-5 text-lg sm:text-2xl leading-none rounded-full"
-          >
-            {darkMode ? "🌙" : "🌞"}
-          </button>
-        )}
+    <div className="bg-white dark:bg-black px-6 sticky top-0 z-20 transition-colors">
+      <div className="flex justify-between items-center pt-2.5 font-serif border-b border-black dark:border-white transition-colors">
+        <Link href="/">
+          <a className="text-xs sm:text-xl uppercase tracking-wider transition-colors dark:text-white  hover:text-gray-500 px-6 py-5 focus:outline-dotted outline-1 outline-black outline-offset-0">
+            Camberwell College of Arts Type Foundry
+          </a>
+        </Link>
+        <div className="flex space-x-4 items-center">
+          <Link href="/about">
+            <a className="uppercase tracking-wider text-xs sm:text-base transition-colors text-black dark:text-white px-5 focus:outline-dotted outline-1 outline-black outline-offset-2">
+              About
+            </a>
+          </Link>
+          {typeof window !== "undefined" && (
+            <button
+              onClick={setDarkMode}
+              className="uppercase tracking-wider transition-colors w-12 text-lg text-black dark:text-white sm:text-2xl leading-none focus:outline-dotted outline-1 outline-black outline-offset-0"
+            >
+              {darkMode ? "☾" : "☀"}
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );
