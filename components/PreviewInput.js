@@ -39,7 +39,7 @@ const PreviewInput = ({
         <textarea
           value={textAreaContent}
           onChange={(e) => setTextAreaContent(e.target.value)}
-          className="text-center whitespace-nowrap overflow-y-hidden focus:outline-none focus:bg-gray-50 p-5 w-full dark:bg-black dark:focus:bg-slate-900 transition-colors dark:focus:text-white scrollbar-thin scrollbar-thumb-black dark:scrollbar-thumb-white scrollbar-track-slate-100 dark:scrollbar-track-slate-900"
+          className="text-center whitespace-nowrap overflow-y-hidden focus:outline-none focus:bg-slate-50 p-5 w-full dark:bg-black dark:focus:bg-slate-900 transition-colors dark:focus:text-white scrollbar-thin scrollbar-thumb-black dark:scrollbar-thumb-white scrollbar-track-slate-400 dark:scrollbar-track-slate-900"
           style={{
             fontSize: `${values[0]}px`,
             height: `${defaultSize * 1.6}px`,
@@ -50,7 +50,7 @@ const PreviewInput = ({
         <div className="md:flex md:space-x-12 space-y-4 md:space-y-0">
           <div>
             <p className="text-sm dark:text-white">{entry.data.author} </p>
-            <p className="text-xs text-gray-400 whitespace-nowrap">
+            <p className="text-xs dark:text-slate-400 whitespace-nowrap">
               Year {`${entry.data.year}`} Student
             </p>
           </div>
@@ -61,19 +61,19 @@ const PreviewInput = ({
                   pangrams[Math.floor(Math.random() * pangrams.length)]
                 )
               }
-              className="text-xs gray-500 text-gray-500 p-2 hover:bg-gray-100 "
+              className="text-xs text-slate-500 dark:text-slate-400 p-2 hover:bg-slate-100 dark:hover:bg-slate-900"
             >
-              The Quick Brown...
+              Pangram...
             </button>
             <button
               onClick={() => setTextAreaContent(alphabet)}
-              className="text-xs gray-500 text-gray-500 p-2 hover:bg-gray-100"
+              className="text-xs text-slate-500 dark:text-slate-400 p-2 hover:bg-slate-100 dark:hover:bg-slate-900"
             >
               ABC...
             </button>
             <button
               onClick={() => setTextAreaContent(entry.data.title)}
-              className="text-xs gray-500 text-gray-500 p-2 hover:bg-gray-100"
+              className="text-xs text-slate-500 dark:text-slate-400 p-2 hover:bg-slate-100 dark:hover:bg-slate-900"
             >
               Name
             </button>
@@ -85,21 +85,21 @@ const PreviewInput = ({
                 values={values}
                 onChange={(values) => setValues(values)}
                 renderTrack={({ props, children }) => (
-                  <div {...props} className="h-1 w-full bg-gray-200">
+                  <div {...props} className="h-1 w-full bg-slate-200">
                     {children}
                   </div>
                 )}
                 renderThumb={({ props }) => (
                   <div
                     {...props}
-                    className="w-4 h-4 rounded-full bg-gray-300"
+                    className="w-4 h-4 rounded-full bg-slate-300"
                   />
                 )}
               />
             </div>
             {router.pathname === "/" && (
               <Link href={`${entry.folder}/${entry.data.slug}`}>
-                <a className="text-xs gray-500 text-gray-500 p-2 hover:bg-gray-100">
+                <a className="text-xs font-bold text-red-500 dark:text-purple-300 p-2 hover:bg-slate-100 dark:hover:bg-slate-900">
                   See more →
                 </a>
               </Link>

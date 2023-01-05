@@ -3,7 +3,7 @@ import { data, directories } from "../utils/contentUtils";
 
 export default function Home({ content, directories }) {
   return directories.slice().reverse().map((directory, dirIndex) => (
-    <div key={dirIndex} className="mb-24">
+    <div key={dirIndex} className="pb-24">
       <p className="transition-colors tracking-wider w-full mb-8 text-xs -mt-6 pt-6 pb-2 px-2 dark:text-white dark:bg-black dark:border-white border-black bg-white z-10 border-b inline-block sticky top-16 border-dotted">
         {directory}
       </p>

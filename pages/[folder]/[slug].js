@@ -18,10 +18,10 @@ export default function Page({ entry }) {
           defaultSize={200}
         />
       </div>
-      <p className="text-5xl uppercase transition-all tracking-wider py-4 bg-white dark:bg-black dark:text-white text-gray-800 inline-block font-serif">
+      <p className="text-5xl uppercase transition-all tracking-wider py-4 bg-white dark:bg-black dark:text-white text-black inline-block font-serif">
         {entry.data.title}
       </p>
-      <p className="text-gray-500">{entry.data.author}</p>
+      <p className="text-slate-600 dark:text-slate-400">{entry.data.author}</p>
       <div className="space-y-10 mt-4">
         <article className="prose dark:prose-invert font-serif">
           <ReactMarkdown>{entry.content}</ReactMarkdown>
@@ -31,7 +31,7 @@ export default function Page({ entry }) {
           <CharacterSet entry={entry} />
         </div>
         <Link href={`/typefaces/${entry.data.class}.otf`}>
-          <a className="inline-block text-center p-4 bg-gray-100 dark:bg-gray-900 hover:bg-gray-600 hover:text-white transition-colors dark:text-white tracking-wider">
+          <a className="inline-block text-center p-4 bg-slate-100 dark:bg-slate-900 hover:bg-slate-600 hover:text-white transition-colors dark:text-white tracking-wider">
             ↓ Download 
           </a>
         </Link>
