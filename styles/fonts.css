@@ -1,17 +1,25 @@
 
 @font-face {
-  font-family: "lemon-milk";
-  src: url("/typefaces/lemon-milk.otf")
+  font-family: "narrativa";
+  src: url("/typefaces/narrativa.ttf")
 }
-.lemon-milk {
-  font-family: "lemon-milk";
+.narrativa {
+  font-family: "narrativa";
 }
   
 @font-face {
-  font-family: "melon-milk";
-  src: url("/typefaces/melon-milk.otf")
+  font-family: "tavita";
+  src: url("/typefaces/tavita.otf")
 }
-.melon-milk {
-  font-family: "melon-milk";
+.tavita {
+  font-family: "tavita";
+}
+  
+@font-face {
+  font-family: "vauxhall-pleasure-gardens-regular";
+  src: url("/typefaces/vauxhall-pleasure-gardens-regular.otf")
+}
+.vauxhall-pleasure-gardens-regular {
+  font-family: "vauxhall-pleasure-gardens-regular";
 }
   

@@ -8,7 +8,7 @@ const Navigation = () => {
     <div className="bg-white dark:bg-black px-6 sticky top-0 z-20 transition-colors">
       <div className="flex justify-between items-center pt-2.5 font-serif border-b border-red-500 dark:border-purple-300 transition-colors">
         <Link href="/">
-          <a className="text-xs sm:text-xl uppercase tracking-wider transition-colors text-red-500 dark:text-purple-300 px-6 py-5 focus:outline-dotted outline-1 outline-black outline-offset-0">
+          <a className="text-xs sm:text-base md:text-xl uppercase tracking-wider transition-colors text-red-500 dark:text-purple-300 md:px-6 py-5 focus:outline-dotted outline-1 outline-black outline-offset-0">
             Camberwell College of Arts Type Foundry
           </a>
         </Link>

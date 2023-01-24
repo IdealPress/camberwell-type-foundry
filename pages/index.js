@@ -8,9 +8,13 @@ export default function Home({ content, directories }) {
         {directory}
       </p>
       <div className="flex flex-col space-y-8">
-        {content[directory].map((entry, entIndex) => (
-          <PreviewInput key={entIndex} entry={entry} />
-        ))}
+        {content[directory].map((entry, entIndex) => {
+          if (entry.data.font || entry.data.cover)  {
+            return (
+              <PreviewInput key={entIndex} entry={entry} />
+            )
+          }
+        })}
       </div>
     </div>
   ));

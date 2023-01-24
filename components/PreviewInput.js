@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -31,72 +32,87 @@ const PreviewInput = ({
   const router = useRouter();
   const [values, setValues] = useState([defaultSize]);
   const [textAreaContent, setTextAreaContent] = useState(entry.data.title);
+
+  const usesFont = entry.data.font
+  const usesImage = !entry.data.font && entry.data.cover
+
   return (
     <div className="space-y-2">
-      <div
-        className={`focus:outline-none ${entry.data.class} text-black dark:text-white`}
-      >
-        <textarea
-          value={textAreaContent}
-          onChange={(e) => setTextAreaContent(e.target.value)}
-          className="text-center whitespace-nowrap overflow-y-hidden focus:outline-none focus:bg-slate-50 p-5 w-full dark:bg-black dark:focus:bg-slate-900 transition-colors dark:focus:text-white scrollbar-thin scrollbar-thumb-black dark:scrollbar-thumb-white scrollbar-track-slate-400 dark:scrollbar-track-slate-900"
-          style={{
-            fontSize: `${values[0]}px`,
-            height: `${defaultSize * 1.6}px`,
-          }}
-        ></textarea>
-      </div>
+      {usesFont && (
+        <div
+          className={`focus:outline-none ${entry.data.class} text-black dark:text-white`}
+        >
+          <textarea
+            value={textAreaContent}
+            onChange={(e) => setTextAreaContent(e.target.value)}
+            className="text-center whitespace-nowrap overflow-y-hidden focus:outline-none focus:bg-slate-50 p-5 w-full dark:bg-black dark:focus:bg-slate-900 transition-colors dark:focus:text-white scrollbar-thin scrollbar-thumb-black dark:scrollbar-thumb-white scrollbar-track-slate-400 dark:scrollbar-track-slate-900"
+            style={{
+              fontSize: `${values[0]}px`,
+              height: `${defaultSize * 1.6}px`,
+            }}
+          ></textarea>
+        </div>
+      )}
+      {usesImage && router.pathname === "/" && (
+        <Link href={`${entry.folder}/${entry.data.slug}`}>
+          <div style={{ backgroundImage: `url(${entry.data.cover})` }} className="h-60 w-full bg-cover bg-center mb-4 cursor-pointer" />
+        </Link>
+      )}
       {displayOptions && (
-        <div className="md:flex md:space-x-12 space-y-4 md:space-y-0">
-          <div>
-            <p className="text-sm dark:text-white">{entry.data.author} </p>
+        <div className="md:flex md:space-x-8 space-y-4 md:space-y-0">
+          <div className="flex-grow">
+            <p className="text-sm dark:text-white min-w-max">{entry.data.author} </p>
             <p className="text-xs dark:text-slate-400 whitespace-nowrap">
               Year {`${entry.data.year}`} Student
             </p>
           </div>
-          <div className="flex items-center space-x-2 w-full flex-grow">
-            <button
-              onClick={() =>
-                setTextAreaContent(
-                  pangrams[Math.floor(Math.random() * pangrams.length)]
-                )
-              }
-              className="text-xs text-slate-500 dark:text-slate-400 p-2 hover:bg-slate-100 dark:hover:bg-slate-900"
-            >
-              Pangram...
-            </button>
-            <button
-              onClick={() => setTextAreaContent(alphabet)}
-              className="text-xs text-slate-500 dark:text-slate-400 p-2 hover:bg-slate-100 dark:hover:bg-slate-900"
-            >
-              ABC...
-            </button>
-            <button
-              onClick={() => setTextAreaContent(entry.data.title)}
-              className="text-xs text-slate-500 dark:text-slate-400 p-2 hover:bg-slate-100 dark:hover:bg-slate-900"
-            >
-              Name
-            </button>
-            <div className="flex-grow h-0">
-              <Range
-                step={1}
-                min={12}
-                max={360}
-                values={values}
-                onChange={(values) => setValues(values)}
-                renderTrack={({ props, children }) => (
-                  <div {...props} className="h-1 w-full bg-slate-200">
-                    {children}
-                  </div>
-                )}
-                renderThumb={({ props }) => (
-                  <div
-                    {...props}
-                    className="w-4 h-4 rounded-full bg-slate-300"
+          <div className="flex items-center justify-between sm:justify-end space-x-2 w-full">
+            { usesFont && (
+              <>
+                <button
+                  onClick={() =>
+                    setTextAreaContent(
+                      pangrams[Math.floor(Math.random() * pangrams.length)]
+                    )
+                  }
+                  className="text-xs text-slate-500 dark:text-slate-400 p-2 hover:bg-slate-100 dark:hover:bg-slate-900"
+                >
+                  Pangram...
+                </button>
+                <button
+                  onClick={() => setTextAreaContent(alphabet)}
+                  className="text-xs text-slate-500 dark:text-slate-400 p-2 hover:bg-slate-100 dark:hover:bg-slate-900"
+                >
+                  ABC...
+                </button>
+                <button
+                  onClick={() => setTextAreaContent(entry.data.title)}
+                  className="text-xs text-slate-500 dark:text-slate-400 p-2 hover:bg-slate-100 dark:hover:bg-slate-900"
+                >
+                  Name
+                </button>
+                <div className="flex-grow h-0 hidden sm:block">
+                  <Range
+                    step={1}
+                    min={12}
+                    max={360}
+                    values={values}
+                    onChange={(values) => setValues(values)}
+                    renderTrack={({ props, children }) => (
+                      <div {...props} className="h-1 w-full bg-slate-200">
+                        {children}
+                      </div>
+                    )}
+                    renderThumb={({ props }) => (
+                      <div
+                        {...props}
+                        className="w-4 h-4 rounded-full bg-slate-300"
+                      />
+                    )}
                   />
-                )}
-              />
-            </div>
+                </div>
+              </>
+            )}
             {router.pathname === "/" && (
               <Link href={`${entry.folder}/${entry.data.slug}`}>
                 <a className="text-xs font-bold text-red-500 dark:text-purple-300 p-2 hover:bg-slate-100 dark:hover:bg-slate-900">
