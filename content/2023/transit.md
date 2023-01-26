@@ -1,7 +1,7 @@
 ---
 title: Transit
 class: "transit"
-author: "Samia Walters"
+author: "Alisa Venelinova"
 year: 1
 slug: "transit"
 font: false

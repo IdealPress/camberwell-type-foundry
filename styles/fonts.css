@@ -1,5 +1,37 @@
 
 @font-face {
+  font-family: "dh-level";
+  src: url("/typefaces/dh-level.otf")
+}
+.dh-level {
+  font-family: "dh-level";
+}
+  
+@font-face {
+  font-family: "garden-gothic";
+  src: url("/typefaces/garden-gothic.otf")
+}
+.garden-gothic {
+  font-family: "garden-gothic";
+}
+  
+@font-face {
+  font-family: "jardinier";
+  src: url("/typefaces/jardinier.otf")
+}
+.jardinier {
+  font-family: "jardinier";
+}
+  
+@font-face {
+  font-family: "lost-liberty";
+  src: url("/typefaces/lost-liberty.otf")
+}
+.lost-liberty {
+  font-family: "lost-liberty";
+}
+  
+@font-face {
   font-family: "narrativa";
   src: url("/typefaces/narrativa.ttf")
 }
@@ -8,18 +40,18 @@
 }
   
 @font-face {
-  font-family: "tavita";
-  src: url("/typefaces/tavita.otf")
+  font-family: "telophase";
+  src: url("/typefaces/telophase.otf")
 }
-.tavita {
-  font-family: "tavita";
+.telophase {
+  font-family: "telophase";
 }
   
 @font-face {
-  font-family: "vauxhall-pleasure-gardens-regular";
-  src: url("/typefaces/vauxhall-pleasure-gardens-regular.otf")
+  font-family: "the-blueprint-of-war";
+  src: url("/typefaces/the-blueprint-of-war.otf")
 }
-.vauxhall-pleasure-gardens-regular {
-  font-family: "vauxhall-pleasure-gardens-regular";
+.the-blueprint-of-war {
+  font-family: "the-blueprint-of-war";
 }
   

@@ -7,7 +7,7 @@ const Layout = ({ children }) => (
     <Head>
       <title>Camberwell College of Arts Type Foundry</title>
       <meta name="description" content="Camberwell Type Foundry" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.png" />
     </Head>
     
     <Navigation />

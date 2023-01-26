@@ -1,5 +1,7 @@
 import Link from "next/link";
 import useDarkMode from "../utils/useDarkMode";
+import MoonSVG from "./MoonSVG";
+import SunSVG from "./SunSVG";
 
 const Navigation = () => {
   const [darkMode, setDarkMode] = useDarkMode();
@@ -21,9 +23,9 @@ const Navigation = () => {
           {typeof window !== "undefined" && (
             <button
               onClick={setDarkMode}
-              className="uppercase tracking-wider transition-colors w-12 text-lg text-red-500 dark:text-purple-300 sm:text-2xl leading-none focus:outline-dotted outline-1 outline-black outline-offset-0"
+              className="uppercase tracking-wider transition-colors w-12 text-lg text-red-500 dark:text-purple-300 sm:text-2xl leading-none"
             >
-              {darkMode ? "☾" : "☀"}
+              {darkMode ? <MoonSVG className="ml-1 -mt-0.5 w-4 h-5 fill-purple-300" /> : <SunSVG className="w-6 h-6 -mt-0.5" />}
             </button>
           )}
         </div>

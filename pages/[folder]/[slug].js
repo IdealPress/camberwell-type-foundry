@@ -26,15 +26,21 @@ export default function Page({ entry }) {
         <article className="prose dark:prose-invert font-serif">
           <ReactMarkdown>{entry.content}</ReactMarkdown>
         </article>
-        <div className="flex flex-col space-y-8">
-          <PreviewInput entry={entry} preset={"pangram"} />
-          <CharacterSet entry={entry} />
-        </div>
-        <Link href={`/typefaces/${entry.data.class}.otf`}>
-          <a className="inline-block text-center p-4 bg-slate-100 dark:bg-slate-900 hover:bg-slate-600 hover:text-white transition-colors dark:text-white tracking-wider">
-            ↓ Download 
-          </a>
-        </Link>
+        {entry.data.font && (
+          <>
+            <div className="flex flex-col space-y-8">
+              <PreviewInput entry={entry} preset={"pangram"} />
+              <CharacterSet entry={entry} />
+            </div>
+            <a 
+              href={`/typefaces/${entry.data.class}.otf`} 
+              download 
+              className="inline-block text-center p-4 bg-slate-100 dark:bg-slate-900 hover:bg-slate-600 hover:text-white transition-colors dark:text-white tracking-wider"
+            >
+              ↓ Download 
+            </a>
+          </>
+        )}
       </div>
     </div>
   );
