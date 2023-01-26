@@ -22,7 +22,7 @@ const Navigation = () => {
           </Link>
           {typeof window !== "undefined" && (
             <div
-              tabindex="0"
+              tabIndex="0"
               onClick={setDarkMode}
               className="cursor-pointer uppercase tracking-wider transition-colors w-12 text-lg text-red-500 dark:text-purple-300 sm:text-2xl leading-none"
             >
