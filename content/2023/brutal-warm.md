@@ -4,7 +4,7 @@ class: "brutal-warm"
 author: "Shangda Li"
 year: 1
 slug: "brutal-warm"
-font: false
+font: true
 cover: "/images/brutal_warm_1.jpg"
 ---
 

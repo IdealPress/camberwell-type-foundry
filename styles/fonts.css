@@ -32,6 +32,14 @@
 }
   
 @font-face {
+  font-family: "brutal-warm";
+  src: url("/typefaces/brutal-warm.otf")
+}
+.brutal-warm {
+  font-family: "brutal-warm";
+}
+  
+@font-face {
   font-family: "contra-bold";
   src: url("/typefaces/contra-bold.otf")
 }
