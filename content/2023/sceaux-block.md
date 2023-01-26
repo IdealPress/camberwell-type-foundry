@@ -4,7 +4,7 @@ class: "sceaux-block"
 author: "Ruben Cook"
 year: 1
 slug: "sceaux-block"
-font: false
+font: true
 cover: "/images/sceaux_block_1.jpg"
 ---
 

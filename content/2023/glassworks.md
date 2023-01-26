@@ -4,7 +4,7 @@ class: "glassworks"
 author: "Gemma Tucker"
 year: 1
 slug: "glassworks"
-font: false
+font: true
 cover: "/images/glassworks_1.jpg"
 ---
 

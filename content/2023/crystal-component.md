@@ -4,7 +4,7 @@ class: "crystal-component"
 author: "Kaja Manka"
 year: 1
 slug: "crystal-component"
-font: false
+font: true
 cover: "/images/crystal_component_1.jpg"
 ---
 

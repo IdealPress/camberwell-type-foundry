@@ -4,7 +4,7 @@ class: "dheton-brut"
 author: "Archie Whiting"
 year: 1
 slug: "dheton-brut"
-font: false
+font: true
 cover: "/images/dheton_brut_1.jpg"
 ---
 

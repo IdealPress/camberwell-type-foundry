@@ -4,7 +4,7 @@ class: "dossier"
 author: "Willem Hayes"
 year: 1
 slug: "dossier"
-font: false
+font: true
 cover: "/images/dossier_1.jpg"
 ---
 

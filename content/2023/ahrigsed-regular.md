@@ -4,7 +4,7 @@ class: "ahrigsed-regular"
 author: "Yuri Wang"
 year: 1
 slug: "ahrigsed-regular"
-font: false
+font: true
 cover: "/images/ahrigsed_regular_1.jpg"
 ---
 

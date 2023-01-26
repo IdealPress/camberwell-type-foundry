@@ -4,7 +4,7 @@ class: "holy-sans"
 author: "Sion Kim"
 year: 1
 slug: "holy-sans"
-font: false
+font: true
 cover: "/images/holy_sans_1.jpg"
 ---
 

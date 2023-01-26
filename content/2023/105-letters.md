@@ -1,10 +1,10 @@
 ---
 title: 105 Letters
-class: "105-letters"
+class: "onehundredandfive-letters"
 author: "Samia Walters"
 year: 1
 slug: "105-letters"
-font: false
+font: true
 cover: "/images/105_letters_1.jpg"
 ---
 

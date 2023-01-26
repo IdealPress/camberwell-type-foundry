@@ -4,7 +4,7 @@ class: "backstage"
 author: "Emma Qiu"
 year: 1
 slug: "backstage"
-font: false
+font: true
 cover: "/images/backstage_1.jpg"
 ---
 

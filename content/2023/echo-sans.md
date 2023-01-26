@@ -1,10 +1,10 @@
 ---
-title: Echo Snas
+title: Echo Sans
 class: "echo-sans"
 author: "Ted Hawthorn"
 year: 1
 slug: "echo-sans"
-font: false
+font: true
 cover: "/images/echo_sans_1.jpg"
 ---
 

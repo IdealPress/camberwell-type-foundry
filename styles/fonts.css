@@ -1,5 +1,61 @@
 
 @font-face {
+  font-family: "ahrigsed-regular";
+  src: url("/typefaces/ahrigsed-regular.otf")
+}
+.ahrigsed-regular {
+  font-family: "ahrigsed-regular";
+}
+  
+@font-face {
+  font-family: "backstage";
+  src: url("/typefaces/backstage.ttf")
+}
+.backstage {
+  font-family: "backstage";
+}
+  
+@font-face {
+  font-family: "bonatur";
+  src: url("/typefaces/bonatur.otf")
+}
+.bonatur {
+  font-family: "bonatur";
+}
+  
+@font-face {
+  font-family: "botanica";
+  src: url("/typefaces/botanica.otf")
+}
+.botanica {
+  font-family: "botanica";
+}
+  
+@font-face {
+  font-family: "contra-bold";
+  src: url("/typefaces/contra-bold.otf")
+}
+.contra-bold {
+  font-family: "contra-bold";
+}
+  
+@font-face {
+  font-family: "contra";
+  src: url("/typefaces/contra.otf")
+}
+.contra {
+  font-family: "contra";
+}
+  
+@font-face {
+  font-family: "crystal-component";
+  src: url("/typefaces/crystal-component.otf")
+}
+.crystal-component {
+  font-family: "crystal-component";
+}
+  
+@font-face {
   font-family: "dh-level";
   src: url("/typefaces/dh-level.otf")
 }
@@ -8,11 +64,59 @@
 }
   
 @font-face {
+  font-family: "dheton-brut";
+  src: url("/typefaces/dheton-brut.ttf")
+}
+.dheton-brut {
+  font-family: "dheton-brut";
+}
+  
+@font-face {
+  font-family: "dossier";
+  src: url("/typefaces/dossier.otf")
+}
+.dossier {
+  font-family: "dossier";
+}
+  
+@font-face {
+  font-family: "echo-sans";
+  src: url("/typefaces/echo-sans.otf")
+}
+.echo-sans {
+  font-family: "echo-sans";
+}
+  
+@font-face {
   font-family: "garden-gothic";
   src: url("/typefaces/garden-gothic.otf")
 }
 .garden-gothic {
   font-family: "garden-gothic";
+}
+  
+@font-face {
+  font-family: "glassworks";
+  src: url("/typefaces/glassworks.otf")
+}
+.glassworks {
+  font-family: "glassworks";
+}
+  
+@font-face {
+  font-family: "holy-sans";
+  src: url("/typefaces/holy-sans.otf")
+}
+.holy-sans {
+  font-family: "holy-sans";
+}
+  
+@font-face {
+  font-family: "horniman-glass";
+  src: url("/typefaces/horniman-glass.otf")
+}
+.horniman-glass {
+  font-family: "horniman-glass";
 }
   
 @font-face {
@@ -32,6 +136,14 @@
 }
   
 @font-face {
+  font-family: "mi6";
+  src: url("/typefaces/mi6.otf")
+}
+.mi6 {
+  font-family: "mi6";
+}
+  
+@font-face {
   font-family: "narrativa";
   src: url("/typefaces/narrativa.ttf")
 }
@@ -40,11 +152,51 @@
 }
   
 @font-face {
+  font-family: "onehundredandfive-letters";
+  src: url("/typefaces/onehundredandfive-letters.ttf")
+}
+.onehundredandfive-letters {
+  font-family: "onehundredandfive-letters";
+}
+  
+@font-face {
+  font-family: "piankhi-sans";
+  src: url("/typefaces/piankhi-sans.ttf")
+}
+.piankhi-sans {
+  font-family: "piankhi-sans";
+}
+  
+@font-face {
+  font-family: "scatterline";
+  src: url("/typefaces/scatterline.ttf")
+}
+.scatterline {
+  font-family: "scatterline";
+}
+  
+@font-face {
+  font-family: "sceaux-block";
+  src: url("/typefaces/sceaux-block.otf")
+}
+.sceaux-block {
+  font-family: "sceaux-block";
+}
+  
+@font-face {
   font-family: "telophase";
   src: url("/typefaces/telophase.otf")
 }
 .telophase {
   font-family: "telophase";
+}
+  
+@font-face {
+  font-family: "the-barbican";
+  src: url("/typefaces/the-barbican.otf")
+}
+.the-barbican {
+  font-family: "the-barbican";
 }
   
 @font-face {

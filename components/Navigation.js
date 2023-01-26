@@ -21,12 +21,13 @@ const Navigation = () => {
             </a>
           </Link>
           {typeof window !== "undefined" && (
-            <button
+            <div
+              tabindex="0"
               onClick={setDarkMode}
-              className="uppercase tracking-wider transition-colors w-12 text-lg text-red-500 dark:text-purple-300 sm:text-2xl leading-none"
+              className="cursor-pointer uppercase tracking-wider transition-colors w-12 text-lg text-red-500 dark:text-purple-300 sm:text-2xl leading-none"
             >
               {darkMode ? <MoonSVG className="ml-1 -mt-0.5 w-4 h-5 fill-purple-300" /> : <SunSVG className="w-6 h-6 -mt-0.5" />}
-            </button>
+            </div>
           )}
         </div>
       </div>
