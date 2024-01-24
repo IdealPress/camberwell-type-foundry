@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function Page({ entry }) {
   return (
     <div className="mt-8 mb-24">
-      <div className="mb-12">
+      <div className="mb-6">
         <PreviewInput
           entry={entry}
           preset={"pangram"}
@@ -18,12 +18,14 @@ export default function Page({ entry }) {
           defaultSize={200}
         />
       </div>
-      <p className="text-5xl uppercase transition-all tracking-wider py-4 bg-white dark:bg-black dark:text-white text-black inline-block font-serif">
+      <p className={`text-3xl text-center w-full uppercase transition-all tracking-wider py-4 bg-neutral-50 dark:bg-black dark:text-white text-black inline-block font-serif ${entry.data.font && "md:hidden"}`}>
         {entry.data.title}
       </p>
-      <p className="text-slate-600 dark:text-slate-400">{entry.data.author}</p>
-      <div className="space-y-10 mt-4">
-        <article className="prose dark:prose-invert font-serif">
+      <p className="text-neutral-900 text-center dark:text-neutral-50 tracking-wider ">
+        By {entry.data.author}
+      </p>
+      <div className="space-y-10 mt-6">
+        <article className="prose dark:prose-invert font-serif mx-auto">
           <ReactMarkdown>{entry.content}</ReactMarkdown>
         </article>
         {entry.data.font && (
@@ -35,9 +37,9 @@ export default function Page({ entry }) {
             <a 
               href={`/typefaces/${entry.data.class}.otf`} 
               download 
-              className="inline-block text-center p-4 bg-slate-100 dark:bg-slate-900 hover:bg-slate-600 hover:text-white transition-colors dark:text-white tracking-wider"
+              className="text-center p-3 text-sm bg-neutral-50 text-black w-full dark:bg-neutral-900 hover:bg-neutral-800 rounded-full h-24 flex justify-center items-center hover:text-white transition-colors dark:text-white tracking-wider"
             >
-              ↓ Download 
+              Download 
             </a>
           </>
         )}

@@ -33,8 +33,8 @@ const PreviewInput = ({
   const [values, setValues] = useState([defaultSize]);
   const [textAreaContent, setTextAreaContent] = useState(entry.data.title);
 
-  const usesFont = entry.data.font
-  const usesImage = !entry.data.font && entry.data.cover
+  const usesFont = entry.data.font;
+  const usesImage = !entry.data.font && entry.data.cover;
 
   return (
     <div className="space-y-2">
@@ -45,7 +45,7 @@ const PreviewInput = ({
           <textarea
             value={textAreaContent}
             onChange={(e) => setTextAreaContent(e.target.value)}
-            className="text-center whitespace-nowrap overflow-y-hidden focus:outline-none focus:bg-slate-50 p-5 w-full dark:bg-black dark:focus:bg-slate-900 transition-colors dark:focus:text-white scrollbar-thin scrollbar-thumb-black dark:scrollbar-thumb-white scrollbar-track-slate-400 dark:scrollbar-track-slate-900"
+            className="text-center focus:text-tf-red dark:focus:text-tf-purple whitespace-nowrap overflow-y-hidden focus:outline-none bg-transparent focus:bg-white rounded-xl p-5 w-full dark:bg-black dark:focus:bg-neutral-900 transition-colors scrollbar-thin scrollbar-thumb-neutral-300 dark:scrollbar-thumb-white scrollbar-track-neutral-50 dark:scrollbar-track-neutral-900"
             style={{
               fontSize: `${values[0]}px`,
               height: `${defaultSize * 1.6}px`,
@@ -59,13 +59,8 @@ const PreviewInput = ({
         </Link>
       )}
       {displayOptions && (
-        <div className="md:flex md:space-x-8 space-y-4 md:space-y-0">
-          <div className="flex-grow">
-            <p className="text-sm dark:text-white min-w-max">{entry.data.author} </p>
-            <p className="text-xs dark:text-slate-400 whitespace-nowrap">
-              Year {`${entry.data.year}`} Student
-            </p>
-          </div>
+        <div className="md:flex items-center md:space-x-8 space-y-4 md:space-y-0">
+          <p className="text-sm text-center tracking-wide dark:text-white min-w-max">{entry.data.author} </p>
           <div className="flex items-center justify-between sm:justify-end space-x-2 w-full">
             { usesFont && (
               <>
@@ -75,47 +70,49 @@ const PreviewInput = ({
                       pangrams[Math.floor(Math.random() * pangrams.length)]
                     )
                   }
-                  className="text-xs text-slate-500 dark:text-slate-400 p-2 hover:bg-slate-100 dark:hover:bg-slate-900"
+                  className="text-xs text-neutral-600 dark:text-neutral-300 p-2 bg-neutral-100 hover:bg-neutral-900 hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-50 transition-colors rounded-full"
                 >
                   Pangram...
                 </button>
                 <button
                   onClick={() => setTextAreaContent(alphabet)}
-                  className="text-xs text-slate-500 dark:text-slate-400 p-2 hover:bg-slate-100 dark:hover:bg-slate-900"
+                  className="text-xs text-neutral-600 dark:text-neutral-300 p-2 bg-neutral-100 hover:bg-neutral-900 hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-50 transition-colors rounded-full"
                 >
                   ABC...
                 </button>
                 <button
                   onClick={() => setTextAreaContent(entry.data.title)}
-                  className="text-xs text-slate-500 dark:text-slate-400 p-2 hover:bg-slate-100 dark:hover:bg-slate-900"
+                  className="text-xs text-neutral-600 dark:text-neutral-300 p-2 bg-neutral-100 hover:bg-neutral-900 hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-50 transition-colors rounded-full"
                 >
                   Name
                 </button>
-                <div className="flex-grow h-0 hidden sm:block">
-                  <Range
-                    step={1}
-                    min={12}
-                    max={360}
-                    values={values}
-                    onChange={(values) => setValues(values)}
-                    renderTrack={({ props, children }) => (
-                      <div {...props} className="h-1 w-full bg-slate-200">
-                        {children}
-                      </div>
-                    )}
-                    renderThumb={({ props }) => (
-                      <div
-                        {...props}
-                        className="w-4 h-4 rounded-full bg-slate-300"
-                      />
-                    )}
-                  />
+                <div className="hidden sm:flex bg-neutral-100 dark:bg-neutral-900 flex-grow h-8 items-center p-4 rounded-full transition-colors">
+                  <div className="flex-grow h-0">
+                    <Range
+                      step={1}
+                      min={12}
+                      max={360}
+                      values={values}
+                      onChange={(values) => setValues(values)}
+                      renderTrack={({ props, children }) => (
+                        <div {...props} className="h-0.5 w-full bg-neutral-400">
+                          {children}
+                        </div>
+                      )}
+                      renderThumb={({ props }) => (
+                        <div
+                          {...props}
+                          className="w-3 h-3 rounded-full bg-neutral-400"
+                        />
+                      )}
+                    />
+                  </div>
                 </div>
               </>
             )}
             {router.pathname === "/" && (
               <Link href={`${entry.folder}/${entry.data.slug}`}>
-                <a className="text-xs font-bold text-red-500 dark:text-purple-300 p-2 hover:bg-slate-100 dark:hover:bg-slate-900">
+                <a className="text-xs flex-grow sm:flex-grow-0  text-center font-bold text-tf-red hover:text-neutral-200 dark:text-tf-purple p-2 bg-neutral-100 dark:bg-neutral-900 transition-colors rounded-full hover:bg-tf-red dark:hover:bg-tf-purple dark:hover:text-neutral-900">
                   See more →
                 </a>
               </Link>

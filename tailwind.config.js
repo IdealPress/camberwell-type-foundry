@@ -17,6 +17,10 @@ module.exports = {
         16: "repeat(16, minmax(0, 1fr))",
         24: "repeat(24, minmax(0, 1fr))",
       },
+      colors: {
+        "tf-red": "#FF0000",
+        "tf-purple": "#D8B4FE"
+      },
       typography: {
         DEFAULT: {
           css: {
@@ -28,7 +32,8 @@ module.exports = {
             },
             img: {
               maxWidth: "100vw",
-              width: "calc(100vw - 4rem)",
+              // width: "calc(100vw - 4rem)",
+              width: "100%",
               margin: "3rem 0rem 3rem 0",
             },
           },

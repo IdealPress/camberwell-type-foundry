@@ -8,11 +8,59 @@
 }
   
 @font-face {
+  font-family: "all-saints";
+  src: url("/typefaces/all-saints.otf")
+}
+.all-saints {
+  font-family: "all-saints";
+}
+  
+@font-face {
+  font-family: "arabesquitic";
+  src: url("/typefaces/arabesquitic.ttf")
+}
+.arabesquitic {
+  font-family: "arabesquitic";
+}
+  
+@font-face {
+  font-family: "arch";
+  src: url("/typefaces/arch.otf")
+}
+.arch {
+  font-family: "arch";
+}
+  
+@font-face {
+  font-family: "atramentum";
+  src: url("/typefaces/atramentum.otf")
+}
+.atramentum {
+  font-family: "atramentum";
+}
+  
+@font-face {
   font-family: "backstage";
   src: url("/typefaces/backstage.ttf")
 }
 .backstage {
   font-family: "backstage";
+}
+  
+@font-face {
+  font-family: "bakers-dozen";
+  src: url("/typefaces/bakers-dozen.otf")
+}
+.bakers-dozen {
+  font-family: "bakers-dozen";
+}
+  
+@font-face {
+  font-family: "belick";
+  src: url("/typefaces/belick.otf")
+}
+.belick {
+  font-family: "belick";
 }
   
 @font-face {
@@ -32,11 +80,35 @@
 }
   
 @font-face {
+  font-family: "brick";
+  src: url("/typefaces/brick.ttf")
+}
+.brick {
+  font-family: "brick";
+}
+  
+@font-face {
   font-family: "brutal-warm";
   src: url("/typefaces/brutal-warm.otf")
 }
 .brutal-warm {
   font-family: "brutal-warm";
+}
+  
+@font-face {
+  font-family: "come-into-view";
+  src: url("/typefaces/come-into-view.otf")
+}
+.come-into-view {
+  font-family: "come-into-view";
+}
+  
+@font-face {
+  font-family: "connect";
+  src: url("/typefaces/connect.ttf")
+}
+.connect {
+  font-family: "connect";
 }
   
 @font-face {
@@ -96,6 +168,14 @@
 }
   
 @font-face {
+  font-family: "folktales";
+  src: url("/typefaces/folktales.ttf")
+}
+.folktales {
+  font-family: "folktales";
+}
+  
+@font-face {
   font-family: "garden-gothic";
   src: url("/typefaces/garden-gothic.otf")
 }
@@ -104,11 +184,51 @@
 }
   
 @font-face {
+  font-family: "george-bussey";
+  src: url("/typefaces/george-bussey.ttf")
+}
+.george-bussey {
+  font-family: "george-bussey";
+}
+  
+@font-face {
+  font-family: "giant";
+  src: url("/typefaces/giant.ttf")
+}
+.giant {
+  font-family: "giant";
+}
+  
+@font-face {
   font-family: "glassworks";
   src: url("/typefaces/glassworks.otf")
 }
 .glassworks {
   font-family: "glassworks";
+}
+  
+@font-face {
+  font-family: "glee";
+  src: url("/typefaces/glee.otf")
+}
+.glee {
+  font-family: "glee";
+}
+  
+@font-face {
+  font-family: "grand";
+  src: url("/typefaces/grand.ttf")
+}
+.grand {
+  font-family: "grand";
+}
+  
+@font-face {
+  font-family: "holy-depiction";
+  src: url("/typefaces/holy-depiction.ttf")
+}
+.holy-depiction {
+  font-family: "holy-depiction";
 }
   
 @font-face {
@@ -128,11 +248,27 @@
 }
   
 @font-face {
+  font-family: "intersection";
+  src: url("/typefaces/intersection.ttf")
+}
+.intersection {
+  font-family: "intersection";
+}
+  
+@font-face {
   font-family: "jardinier";
   src: url("/typefaces/jardinier.otf")
 }
 .jardinier {
   font-family: "jardinier";
+}
+  
+@font-face {
+  font-family: "kentish-drovers";
+  src: url("/typefaces/kentish-drovers.ttf")
+}
+.kentish-drovers {
+  font-family: "kentish-drovers";
 }
   
 @font-face {
@@ -149,6 +285,14 @@
 }
 .mi6 {
   font-family: "mi6";
+}
+  
+@font-face {
+  font-family: "montage";
+  src: url("/typefaces/montage.otf")
+}
+.montage {
+  font-family: "montage";
 }
   
 @font-face {
@@ -176,6 +320,46 @@
 }
   
 @font-face {
+  font-family: "pointe";
+  src: url("/typefaces/pointe.ttf")
+}
+.pointe {
+  font-family: "pointe";
+}
+  
+@font-face {
+  font-family: "re";
+  src: url("/typefaces/re.ttf")
+}
+.re {
+  font-family: "re";
+}
+  
+@font-face {
+  font-family: "resurrection";
+  src: url("/typefaces/resurrection.otf")
+}
+.resurrection {
+  font-family: "resurrection";
+}
+  
+@font-face {
+  font-family: "revamp95";
+  src: url("/typefaces/revamp95.ttf")
+}
+.revamp95 {
+  font-family: "revamp95";
+}
+  
+@font-face {
+  font-family: "sans-savoir";
+  src: url("/typefaces/sans-savoir.otf")
+}
+.sans-savoir {
+  font-family: "sans-savoir";
+}
+  
+@font-face {
   font-family: "scatterline";
   src: url("/typefaces/scatterline.ttf")
 }
@@ -189,6 +373,22 @@
 }
 .sceaux-block {
   font-family: "sceaux-block";
+}
+  
+@font-face {
+  font-family: "space";
+  src: url("/typefaces/space.ttf")
+}
+.space {
+  font-family: "space";
+}
+  
+@font-face {
+  font-family: "spinose";
+  src: url("/typefaces/spinose.ttf")
+}
+.spinose {
+  font-family: "spinose";
 }
   
 @font-face {
@@ -213,5 +413,45 @@
 }
 .the-blueprint-of-war {
   font-family: "the-blueprint-of-war";
+}
+  
+@font-face {
+  font-family: "trance";
+  src: url("/typefaces/trance.ttf")
+}
+.trance {
+  font-family: "trance";
+}
+  
+@font-face {
+  font-family: "transitum";
+  src: url("/typefaces/transitum.otf")
+}
+.transitum {
+  font-family: "transitum";
+}
+  
+@font-face {
+  font-family: "unity";
+  src: url("/typefaces/unity.otf")
+}
+.unity {
+  font-family: "unity";
+}
+  
+@font-face {
+  font-family: "upper-room";
+  src: url("/typefaces/upper-room.ttf")
+}
+.upper-room {
+  font-family: "upper-room";
+}
+  
+@font-face {
+  font-family: "victorian-bloom";
+  src: url("/typefaces/victorian-bloom.otf")
+}
+.victorian-bloom {
+  font-family: "victorian-bloom";
 }
   
