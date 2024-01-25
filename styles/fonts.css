@@ -96,6 +96,22 @@
 }
   
 @font-face {
+  font-family: "canal";
+  src: url("/typefaces/canal.otf")
+}
+.canal {
+  font-family: "canal";
+}
+  
+@font-face {
+  font-family: "cheeky-mayo";
+  src: url("/typefaces/cheeky-mayo.ttf")
+}
+.cheeky-mayo {
+  font-family: "cheeky-mayo";
+}
+  
+@font-face {
   font-family: "come-into-view";
   src: url("/typefaces/come-into-view.otf")
 }
@@ -109,6 +125,22 @@
 }
 .connect {
   font-family: "connect";
+}
+  
+@font-face {
+  font-family: "constructed";
+  src: url("/typefaces/constructed.otf")
+}
+.constructed {
+  font-family: "constructed";
+}
+  
+@font-face {
+  font-family: "consume";
+  src: url("/typefaces/consume.ttf")
+}
+.consume {
+  font-family: "consume";
 }
   
 @font-face {
@@ -168,11 +200,35 @@
 }
   
 @font-face {
+  font-family: "eternal";
+  src: url("/typefaces/eternal.otf")
+}
+.eternal {
+  font-family: "eternal";
+}
+  
+@font-face {
+  font-family: "flame";
+  src: url("/typefaces/flame.ttf")
+}
+.flame {
+  font-family: "flame";
+}
+  
+@font-face {
   font-family: "folktales";
   src: url("/typefaces/folktales.ttf")
 }
 .folktales {
   font-family: "folktales";
+}
+  
+@font-face {
+  font-family: "gallerie";
+  src: url("/typefaces/gallerie.otf")
+}
+.gallerie {
+  font-family: "gallerie";
 }
   
 @font-face {
@@ -216,11 +272,27 @@
 }
   
 @font-face {
+  font-family: "glue-depot";
+  src: url("/typefaces/glue-depot.otf")
+}
+.glue-depot {
+  font-family: "glue-depot";
+}
+  
+@font-face {
   font-family: "grand";
   src: url("/typefaces/grand.ttf")
 }
 .grand {
   font-family: "grand";
+}
+  
+@font-face {
+  font-family: "historical-trace";
+  src: url("/typefaces/historical-trace.otf")
+}
+.historical-trace {
+  font-family: "historical-trace";
 }
   
 @font-face {
@@ -248,11 +320,27 @@
 }
   
 @font-face {
+  font-family: "house-of-tile";
+  src: url("/typefaces/house-of-tile.otf")
+}
+.house-of-tile {
+  font-family: "house-of-tile";
+}
+  
+@font-face {
   font-family: "intersection";
   src: url("/typefaces/intersection.ttf")
 }
 .intersection {
   font-family: "intersection";
+}
+  
+@font-face {
+  font-family: "iron";
+  src: url("/typefaces/iron.otf")
+}
+.iron {
+  font-family: "iron";
 }
   
 @font-face {
@@ -272,11 +360,27 @@
 }
   
 @font-face {
+  font-family: "khans";
+  src: url("/typefaces/khans.otf")
+}
+.khans {
+  font-family: "khans";
+}
+  
+@font-face {
   font-family: "lost-liberty";
   src: url("/typefaces/lost-liberty.otf")
 }
 .lost-liberty {
   font-family: "lost-liberty";
+}
+  
+@font-face {
+  font-family: "luminatrix-sans";
+  src: url("/typefaces/luminatrix-sans.ttf")
+}
+.luminatrix-sans {
+  font-family: "luminatrix-sans";
 }
   
 @font-face {
@@ -296,11 +400,27 @@
 }
   
 @font-face {
+  font-family: "munch";
+  src: url("/typefaces/munch.ttf")
+}
+.munch {
+  font-family: "munch";
+}
+  
+@font-face {
   font-family: "narrativa";
   src: url("/typefaces/narrativa.ttf")
 }
 .narrativa {
   font-family: "narrativa";
+}
+  
+@font-face {
+  font-family: "new-modary";
+  src: url("/typefaces/new-modary.ttf")
+}
+.new-modary {
+  font-family: "new-modary";
 }
   
 @font-face {
@@ -328,11 +448,27 @@
 }
   
 @font-face {
+  font-family: "pruned";
+  src: url("/typefaces/pruned.otf")
+}
+.pruned {
+  font-family: "pruned";
+}
+  
+@font-face {
   font-family: "re";
   src: url("/typefaces/re.ttf")
 }
 .re {
   font-family: "re";
+}
+  
+@font-face {
+  font-family: "reflex";
+  src: url("/typefaces/reflex.otf")
+}
+.reflex {
+  font-family: "reflex";
 }
   
 @font-face {
@@ -349,6 +485,14 @@
 }
 .revamp95 {
   font-family: "revamp95";
+}
+  
+@font-face {
+  font-family: "rush";
+  src: url("/typefaces/rush.otf")
+}
+.rush {
+  font-family: "rush";
 }
   
 @font-face {
@@ -376,6 +520,22 @@
 }
   
 @font-face {
+  font-family: "segmenting";
+  src: url("/typefaces/segmenting.otf")
+}
+.segmenting {
+  font-family: "segmenting";
+}
+  
+@font-face {
+  font-family: "simone-65";
+  src: url("/typefaces/simone-65.otf")
+}
+.simone-65 {
+  font-family: "simone-65";
+}
+  
+@font-face {
   font-family: "space";
   src: url("/typefaces/space.ttf")
 }
@@ -389,6 +549,14 @@
 }
 .spinose {
   font-family: "spinose";
+}
+  
+@font-face {
+  font-family: "tarnished";
+  src: url("/typefaces/tarnished.otf")
+}
+.tarnished {
+  font-family: "tarnished";
 }
   
 @font-face {
@@ -413,6 +581,14 @@
 }
 .the-blueprint-of-war {
   font-family: "the-blueprint-of-war";
+}
+  
+@font-face {
+  font-family: "toward-uniformity";
+  src: url("/typefaces/toward-uniformity.otf")
+}
+.toward-uniformity {
+  font-family: "toward-uniformity";
 }
   
 @font-face {
@@ -445,6 +621,22 @@
 }
 .upper-room {
   font-family: "upper-room";
+}
+  
+@font-face {
+  font-family: "vcinity";
+  src: url("/typefaces/vcinity.ttf")
+}
+.vcinity {
+  font-family: "vcinity";
+}
+  
+@font-face {
+  font-family: "versatility";
+  src: url("/typefaces/versatility.otf")
+}
+.versatility {
+  font-family: "versatility";
 }
   
 @font-face {
