@@ -32,6 +32,14 @@
 }
   
 @font-face {
+  font-family: "arches";
+  src: url("/typefaces/arches.otf")
+}
+.arches {
+  font-family: "arches";
+}
+  
+@font-face {
   font-family: "atramentum";
   src: url("/typefaces/atramentum.otf")
 }
@@ -533,6 +541,14 @@
 }
 .sceaux-block {
   font-family: "sceaux-block";
+}
+  
+@font-face {
+  font-family: "section88";
+  src: url("/typefaces/section88.otf")
+}
+.section88 {
+  font-family: "section88";
 }
   
 @font-face {
