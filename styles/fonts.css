@@ -240,6 +240,14 @@
 }
   
 @font-face {
+  font-family: "geoglyphics";
+  src: url("/typefaces/geoglyphics.ttf")
+}
+.geoglyphics {
+  font-family: "geoglyphics";
+}
+  
+@font-face {
   font-family: "george-bussey";
   src: url("/typefaces/george-bussey.ttf")
 }
@@ -597,6 +605,14 @@
 }
 .trance {
   font-family: "trance";
+}
+  
+@font-face {
+  font-family: "transitum-inktrap";
+  src: url("/typefaces/transitum-inktrap.otf")
+}
+.transitum-inktrap {
+  font-family: "transitum-inktrap";
 }
   
 @font-face {

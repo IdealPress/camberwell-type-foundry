@@ -1,6 +1,6 @@
 ---
 title: Transitum
-class: transitum
+class: transitum-inktrap
 author: Ross McKean
 year: 1
 slug: transitum
