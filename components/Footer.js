@@ -15,7 +15,7 @@ const Footer = () => (
     </div>
     <div className="flex-grow" />
     <div>
-      <p>For more information or to report a problem please contact <a className="underline underline-offset-2" href="mailto:j.clarke@arts.ac.uk">Jack Clarke</a> or <a className="underline underline-offset-2" href="mailto:c.abbott@arts.ac.uk">Charlie Abbott</a></p>
+      <p>For more information or to report a problem please contact <a className="underline underline-offset-2" href="mailto:j.clarke@arts.ac.uk">Jack Clarke</a>, <a className="underline underline-offset-2" href="mailto:c.abbott@arts.ac.uk">Charlie Abbott</a> or <a className="underline underline-offset-2" href="mailto:k.rehal@arts.ac.uk">Kam Rehal</a></p>
     </div>
   </div>
 );
