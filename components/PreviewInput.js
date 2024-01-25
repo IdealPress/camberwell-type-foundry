@@ -70,19 +70,19 @@ const PreviewInput = ({
                       pangrams[Math.floor(Math.random() * pangrams.length)]
                     )
                   }
-                  className="text-xs text-neutral-600 dark:text-neutral-300 p-2 bg-neutral-100 hover:bg-neutral-900 hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-50 transition-colors rounded-full"
+                  className="text-xs text-neutral-600 dark:text-neutral-300 p-2 bg-neutral-100 hover:bg-neutral-900 hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-50 dark:hover:text-neutral-900 transition-colors rounded-full focus:outline-neutral-900 dark:focus:outline-neutral-50"
                 >
                   Pangram...
                 </button>
                 <button
                   onClick={() => setTextAreaContent(alphabet)}
-                  className="text-xs text-neutral-600 dark:text-neutral-300 p-2 bg-neutral-100 hover:bg-neutral-900 hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-50 transition-colors rounded-full"
+                  className="text-xs text-neutral-600 dark:text-neutral-300 p-2 bg-neutral-100 hover:bg-neutral-900 hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-50 dark:hover:text-neutral-900 transition-colors rounded-full focus:outline-neutral-900 dark:focus:outline-neutral-50"
                 >
                   ABC...
                 </button>
                 <button
                   onClick={() => setTextAreaContent(entry.data.title)}
-                  className="text-xs text-neutral-600 dark:text-neutral-300 p-2 bg-neutral-100 hover:bg-neutral-900 hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-50 transition-colors rounded-full"
+                  className="text-xs text-neutral-600 dark:text-neutral-300 p-2 bg-neutral-100 hover:bg-neutral-900 hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-50 dark:hover:text-neutral-900 transition-colors rounded-full focus:outline-neutral-900 dark:focus:outline-neutral-50"
                 >
                   Name
                 </button>
@@ -102,7 +102,7 @@ const PreviewInput = ({
                       renderThumb={({ props }) => (
                         <div
                           {...props}
-                          className="w-3 h-3 rounded-full bg-neutral-400"
+                          className="w-3 h-3 rounded-full bg-neutral-400 focus:outline-neutral-900 dark:focus:outline-neutral-50"
                         />
                       )}
                     />
@@ -112,7 +112,7 @@ const PreviewInput = ({
             )}
             {router.pathname === "/" && (
               <Link href={`${entry.folder}/${entry.data.slug}`}>
-                <a className="text-xs flex-grow sm:flex-grow-0  text-center font-bold text-tf-red hover:text-neutral-200 dark:text-tf-purple p-2 bg-neutral-100 dark:bg-neutral-900 transition-colors rounded-full hover:bg-tf-red dark:hover:bg-tf-purple dark:hover:text-neutral-900">
+                <a className="text-xs flex-grow sm:flex-grow-0  text-center font-bold text-tf-red hover:text-neutral-200 dark:text-tf-purple p-2 bg-neutral-100 dark:bg-neutral-900 transition-colors rounded-full focus:outline-neutral-900 dark:focus:outline-neutral-50 hover:bg-tf-red dark:hover:bg-tf-purple dark:hover:text-neutral-900">
                   See more →
                 </a>
               </Link>
