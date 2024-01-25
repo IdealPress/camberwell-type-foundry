@@ -496,6 +496,14 @@
 }
   
 @font-face {
+  font-family: "route-aero";
+  src: url("/typefaces/route-aero.otf")
+}
+.route-aero {
+  font-family: "route-aero";
+}
+  
+@font-face {
   font-family: "rush";
   src: url("/typefaces/rush.otf")
 }
