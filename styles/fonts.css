@@ -520,6 +520,14 @@
 }
   
 @font-face {
+  font-family: "harmony";
+  src: url("/typefaces/harmony.ttf")
+}
+.harmony {
+  font-family: "harmony";
+}
+  
+@font-face {
   font-family: "hidden-sound";
   src: url("/typefaces/hidden-sound.otf")
 }
