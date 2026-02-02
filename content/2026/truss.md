@@ -4,7 +4,7 @@ class: truss
 author: Adele Patricija
 year: 1
 slug: truss
-font: false
+font: true
 cover: "/images/Truss_Adele%20Patricija_1_Adele%20Sedereviciute.gif"
 ---
 

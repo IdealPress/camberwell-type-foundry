@@ -1,5 +1,13 @@
 
 @font-face {
+  font-family: "truss";
+  src: url("/typefaces/truss.ttf")
+}
+.truss {
+  font-family: "truss";
+}
+
+@font-face {
   font-family: "line-candy";
   src: url("/typefaces/line-candy.ttf")
 }

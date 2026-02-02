@@ -9,11 +9,9 @@ const Layout = ({ children }) => (
       <meta name="description" content="Camberwell Type Foundry" />
       <link rel="icon" href="/favicon.png" />
     </Head>
-    
+
     <Navigation />
-    <main className="px-6 min-h-screen">      
-      {children}
-    </main>
+    <main className="px-4 md:px-6 min-h-screen">{children}</main>
 
     <Footer />
   </div>

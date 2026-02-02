@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Range } from "react-range";
 
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz";
@@ -30,8 +30,15 @@ const PreviewInput = ({
   defaultSize = 170,
 }) => {
   const router = useRouter();
+
   const [values, setValues] = useState([defaultSize]);
   const [textAreaContent, setTextAreaContent] = useState(entry.data.title);
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setValues([100]);
+    }
+  }, []);
 
   const usesFont = entry.data.font;
   const usesImage = !entry.data.font && entry.data.cover;
@@ -48,26 +55,31 @@ const PreviewInput = ({
             className="text-center focus:text-tf-red dark:focus:text-tf-purple whitespace-nowrap overflow-y-hidden focus:outline-none bg-transparent focus:bg-white rounded-xl p-5 w-full dark:bg-black dark:focus:bg-neutral-900 transition-colors scrollbar-thin scrollbar-thumb-neutral-300 dark:scrollbar-thumb-white scrollbar-track-neutral-50 dark:scrollbar-track-neutral-900"
             style={{
               fontSize: `${values[0]}px`,
-              height: `${defaultSize * 1.6}px`,
+              height: `${values[0] * 1.6}px`,
             }}
           ></textarea>
         </div>
       )}
       {usesImage && router.pathname === "/" && (
         <Link href={`${entry.folder}/${entry.data.slug}`}>
-          <div style={{ backgroundImage: `url(${entry.data.cover})` }} className="h-60 w-full bg-cover bg-center mb-4 cursor-pointer" />
+          <div
+            style={{ backgroundImage: `url(${entry.data.cover})` }}
+            className="h-60 w-full bg-cover bg-center mb-4 cursor-pointer"
+          />
         </Link>
       )}
       {displayOptions && (
         <div className="md:flex items-center md:space-x-8 space-y-4 md:space-y-0">
-          <p className="text-sm text-center tracking-wide dark:text-white min-w-max">{entry.data.author} </p>
+          <p className="text-sm text-center tracking-wide dark:text-white min-w-max">
+            {entry.data.author}{" "}
+          </p>
           <div className="flex items-center justify-between sm:justify-end space-x-2 w-full">
-            { usesFont && (
+            {usesFont && (
               <>
                 <button
                   onClick={() =>
                     setTextAreaContent(
-                      pangrams[Math.floor(Math.random() * pangrams.length)]
+                      pangrams[Math.floor(Math.random() * pangrams.length)],
                     )
                   }
                   className="text-xs text-neutral-600 dark:text-neutral-300 p-2 bg-neutral-100 hover:bg-neutral-900 hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-50 dark:hover:text-neutral-900 transition-colors rounded-full focus:outline-neutral-900 dark:focus:outline-neutral-50"
