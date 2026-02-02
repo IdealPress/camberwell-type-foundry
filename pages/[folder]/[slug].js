@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import path from "path";
 import { allFilePaths, CONTENT_PATH } from "../../utils/contentUtils";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw"; // Add this import
 import PreviewInput from "../../components/PreviewInput";
 import CharacterSet from "../../components/CharacterSet";
 import Link from "next/link";
@@ -18,7 +19,9 @@ export default function Page({ entry }) {
           defaultSize={200}
         />
       </div>
-      <p className={`text-3xl text-center w-full uppercase transition-all tracking-wider py-4 bg-neutral-50 dark:bg-black dark:text-white text-black inline-block font-serif ${entry.data.font && "md:hidden"}`}>
+      <p
+        className={`text-3xl text-center w-full uppercase transition-all tracking-wider py-4 bg-neutral-50 dark:bg-black dark:text-white text-black inline-block font-serif ${entry.data.font && "md:hidden"}`}
+      >
         {entry.data.title}
       </p>
       <p className="text-neutral-900 text-center dark:text-neutral-50 tracking-wider ">
@@ -26,7 +29,9 @@ export default function Page({ entry }) {
       </p>
       <div className="space-y-10 mt-6">
         <article className="prose dark:prose-invert font-serif mx-auto">
-          <ReactMarkdown>{entry.content}</ReactMarkdown>
+          <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+            {entry.content}
+          </ReactMarkdown>
         </article>
         {entry.data.font && (
           <>
@@ -34,12 +39,12 @@ export default function Page({ entry }) {
               <PreviewInput entry={entry} preset={"pangram"} />
               <CharacterSet entry={entry} />
             </div>
-            <a 
-              href={`/typefaces/${entry.data.class}.otf`} 
-              download 
+            <a
+              href={`/typefaces/${entry.data.class}.otf`}
+              download
               className="text-center p-3 text-sm bg-neutral-50 text-black w-full dark:bg-neutral-900 hover:bg-neutral-800 rounded-full h-24 flex justify-center items-center hover:text-white transition-colors dark:text-white tracking-wider"
             >
-              Download 
+              Download
             </a>
           </>
         )}
@@ -51,7 +56,7 @@ export default function Page({ entry }) {
 export const getStaticProps = async ({ params }) => {
   const filePath = path.join(
     CONTENT_PATH,
-    `${params.folder}/${params.slug}.md`
+    `${params.folder}/${params.slug}.md`,
   );
   const source = fs.readFileSync(filePath);
   const { content, data } = matter(source);
