@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "agora";
+  src: url("/typefaces/agora.ttf")
+}
+.agora {
+  font-family: "agora";
+}
 
 @font-face {
   font-family: "truss";
