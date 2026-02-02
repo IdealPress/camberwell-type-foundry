@@ -3,7 +3,7 @@ title: Sticker
 class: stickerfont
 author: LIU YINUO
 year: 1
-slug: stickerfont
+slug: sticker
 font: true
 cover: "typeface_sticker_Liu%20Yinuo.jpg"
 ---
